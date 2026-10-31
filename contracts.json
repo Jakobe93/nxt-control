@@ -1,0 +1,20 @@
+{
+  "resource": "nxt-control",
+  "version": null,
+  "aliases": [],
+  "dependencies": [],
+  "provides": {
+    "exports": {
+      "client": [],
+      "server": []
+    },
+    "dynamic_exports": false,
+    "events": [],
+    "callbacks": []
+  },
+  "uses": {
+    "exports": {},
+    "events": [],
+    "callbacks": []
+  }
+}

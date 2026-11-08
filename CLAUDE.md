@@ -34,7 +34,7 @@ If `nxt-md` cannot be attached, say so and work from the short rules below.
 
 ## Checks
 
-Every pull request runs `nxt checks` (`.github/workflows/nxt-checks.yml`). Run the same locally:
+Run these before every merge. `nxt checks` (`.github/workflows/nxt-checks.yml`) runs the same on GitHub only when started by hand:
 
 ```
 python3 .github/nxt/nxt_check.py lua                 # Lua syntax, Cfx extensions allowed

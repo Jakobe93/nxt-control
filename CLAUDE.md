@@ -20,7 +20,7 @@ If `nxt-md` cannot be attached, say so and work from the short rules below.
 - Mark anything unconfirmed `[VERIFY]`; say what has not been tested in game.
 - This thread owns this repo only. Changes for another resource go to that repo as an issue or pull request.
 - Check this repo's open issues and pull requests at the start of a session.
-- Push only when Jakobe says so. Merge your own pull requests by fast-forward, never with GitHub's merge button, and delete the branch (WORKING.md rule 11).
+- Push only when Jakobe says so, except for what WORKING.md rule 10 lists as already having his go-ahead (a bug fix among them). Merge your own pull requests by fast-forward, never with GitHub's merge button, and delete the branch (WORKING.md rule 11).
 - An idea Jakobe mentions, for any script, existing or not, is written down in `nxt-md` `ideas/<script-name>/` when it comes up; read that folder first (WORKING.md, Ideas).
 - A change players would notice gets a `devlog:` line in its commit message: the line Serverboard drafts for the changelog (WORKING.md, The changelog line).
 - A file keeps the line endings it has: change it with exact replacements, never by writing the whole file out again (WORKING.md, Line endings).

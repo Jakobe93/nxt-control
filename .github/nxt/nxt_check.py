@@ -215,7 +215,8 @@ _Q = r"""['"]([^'"\n]+)['"]"""
 RE_EXPORT_DEF = re.compile(r"""(?<![\w.:\]])exports\(\s*""" + _Q)
 # exports registered in a loop or through the __cfx_export_ event: names unknown statically
 RE_EXPORT_DYN = re.compile(r"""(?<![\w.:\]])exports\(\s*[A-Za-z_]|__cfx_export_""")
-RE_NET_EVENT = re.compile(r"""\bRegisterNetEvent\(\s*""" + _Q)
+# RegisterServerEvent is the older name for RegisterNetEvent on the server: both make a net event
+RE_NET_EVENT = re.compile(r"""\bRegister(?:Net|Server)Event\(\s*""" + _Q)
 RE_CB_DEF = re.compile(r"""\blib\.callback\.register\(\s*""" + _Q)
 RE_EXPORT_USE = re.compile(
     r"""\bexports(?:\[\s*['"]([^'"\n]+)['"]\s*\]|\.([A-Za-z_]\w*))\s*[:.]\s*([A-Za-z_]\w*)""")
